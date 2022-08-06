@@ -182,12 +182,14 @@ header{
 
         a {
             text-align: center;
+            font-size: smaller;
+            font-weight: 600;
             display: block;
             margin-top: 2.5rem;
         }
 
         .button {
-            margin: 7.5rem 25%;
+            margin: 2.5rem 25%;
         }
 
         &.active {
