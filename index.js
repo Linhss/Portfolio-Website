@@ -1,27 +1,27 @@
 var menus = [
     {
-        menu: 'HOME'
-    },
-    {
-        menu: 'ABOUT'
-    },
-    {
-        menu: 'SERVICES'
-    },
-    {
-        menu:'PORTFOLIO'
-    },
-    {
-        menu: 'CONTACT'
+        menu: 'HOME',
+        about: 'ABOUT',
+        services: 'SERVICES',
+        portfolio:'PORTFOLIO',
+        contact: 'CONTACT'
     }
 ]
 
 function menuHandler(item){
-    return `<a>${item.menu}</a>`
+    
+    return `<a>${item.menu}</a>
+            <a>${item.about}</a>
+            <a>${item.services}</a>
+            <a>${item.portfolio}</a>
+            <a>${item.contact}</a>
+    `
 }
-var newMenus = menus.map(menuHandler);
+
+var newMenus = menus.map(menuHandler)
     newMenus.join('')
 
+    
 let navbar = document.querySelector('.navbar')
 document.querySelector('#burger').onclick = () => {
     navbar.classList.toggle('active');
